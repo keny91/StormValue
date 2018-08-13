@@ -49,17 +49,17 @@ It will be interesting to include a KNN or NN to do some character/portrait reco
 
 ### RT Engine :		MAP
 
-![alt text](https://github.com/keny91/StormValue/blob/master/documentation/RTEngine_Roadmap.jpg)
+![alt text](https://github.com/keny91/StormValue/blob/master/Documentation/RTEngine_Roadmap.jpg)
 
 
 
 ### GAME CLASSES :		docs
 
-![alt text](https://github.com/keny91/StormValue/blob/master/documentation/class_map.jpg)
+![alt text](https://github.com/keny91/StormValue/blob/master/Documentation/class_map.jpg)
 
 
 ### CALLBACK MAP :		MAP
 
-![alt text](https://github.com/keny91/StormValue/blob/master/documentation/Engine_CBs.png)
+![alt text](https://github.com/keny91/StormValue/blob/master/Documentation/Engine_CBs.png)
 
 
