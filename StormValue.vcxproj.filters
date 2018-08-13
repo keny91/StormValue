@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source Files\rtEngine">
+      <UniqueIdentifier>{dbae692f-9e7b-41c7-8d6b-84b34d74454a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\valEngine">
+      <UniqueIdentifier>{b9bec3bc-2daf-4d7a-8226-93e7224428d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\rtEngine">
+      <UniqueIdentifier>{a59cbd8f-f8fe-4f7f-9030-687864c409e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\valEngine">
+      <UniqueIdentifier>{56f37d6f-df34-463a-b472-11fd2edb2466}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="data\characters\character_template\Habilities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="data\characters\character_template\Stats.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="data\characters\character_template\Talents.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="env\ENV_characters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="env\ENV_CV.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="env\ENV_maps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
