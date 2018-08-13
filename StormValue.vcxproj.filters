@@ -25,17 +25,17 @@
     <Filter Include="Header Files\valEngine">
       <UniqueIdentifier>{56f37d6f-df34-463a-b472-11fd2edb2466}</UniqueIdentifier>
     </Filter>
+    <Filter Include="data">
+      <UniqueIdentifier>{d9268215-f3fc-4e8b-95da-386076bac770}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\characters">
+      <UniqueIdentifier>{6e491f57-5e12-4926-bc5a-084fec182bf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\characters\template">
+      <UniqueIdentifier>{729d52e4-f2bd-49b0-a485-a03fae98d0fa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="data\characters\character_template\Habilities.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="data\characters\character_template\Stats.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="data\characters\character_template\Talents.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="env\ENV_characters.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -44,6 +44,15 @@
     </ClInclude>
     <ClInclude Include="env\ENV_maps.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="data\characters\character_template\Habilities.h">
+      <Filter>data\characters\template</Filter>
+    </ClInclude>
+    <ClInclude Include="data\characters\character_template\Stats.h">
+      <Filter>data\characters\template</Filter>
+    </ClInclude>
+    <ClInclude Include="data\characters\character_template\Talents.h">
+      <Filter>data\characters\template</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
