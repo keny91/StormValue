@@ -9,5 +9,13 @@
     <ClCompile Include="main.cpp">
       <Filter>Core</Filter>
     </ClCompile>
+    <ClCompile Include="HostCore\src\Game.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="HostCore\include\Game.h">
+      <Filter>Core</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
