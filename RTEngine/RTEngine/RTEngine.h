@@ -21,7 +21,17 @@
 
 
 
+/*
+	Delete as they are defined
+*/
 
+extern class RTEngineInstance;
+
+extern class RTPassage;
+
+typedef struct _RTDataStruct {
+}
+RTDataStruct;
 
 
 /**

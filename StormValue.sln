@@ -1,11 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StormValue", "StormValue.vcxproj", "{B84A89EE-CF95-4F56-9A28-7F32D0FA7C78}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RTEngine", "RTEngine\RTEngine\RTEngine.vcxproj", "{047DB15A-AD46-48DE-B16D-3E45C9975BEE}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ValueEngine", "ValEngine\ValueEngine\ValueEngine.vcxproj", "{152ED2D8-E9BB-4CDC-A11A-DB08397875B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{B1F8700C-CA8B-4AE2-AAA1-43DE331F024F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Logging.Windows", "Logging\Logging\Logging.Windows\Logging.Windows.vcxproj", "{691176FF-C1D2-4C14-9E09-AD4835140C77}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,9 +71,28 @@ Global
 		{152ED2D8-E9BB-4CDC-A11A-DB08397875B5}.Release|x64.Build.0 = Release|x64
 		{152ED2D8-E9BB-4CDC-A11A-DB08397875B5}.Release|x86.ActiveCfg = Release|Win32
 		{152ED2D8-E9BB-4CDC-A11A-DB08397875B5}.Release|x86.Build.0 = Release|Win32
+		{691176FF-C1D2-4C14-9E09-AD4835140C77}.Debug|ARM.ActiveCfg = Debug|ARM
+		{691176FF-C1D2-4C14-9E09-AD4835140C77}.Debug|ARM.Build.0 = Debug|ARM
+		{691176FF-C1D2-4C14-9E09-AD4835140C77}.Debug|Win32.ActiveCfg = Debug|Win32
+		{691176FF-C1D2-4C14-9E09-AD4835140C77}.Debug|Win32.Build.0 = Debug|Win32
+		{691176FF-C1D2-4C14-9E09-AD4835140C77}.Debug|x64.ActiveCfg = Debug|x64
+		{691176FF-C1D2-4C14-9E09-AD4835140C77}.Debug|x64.Build.0 = Debug|x64
+		{691176FF-C1D2-4C14-9E09-AD4835140C77}.Debug|x86.ActiveCfg = Debug|Win32
+		{691176FF-C1D2-4C14-9E09-AD4835140C77}.Debug|x86.Build.0 = Debug|Win32
+		{691176FF-C1D2-4C14-9E09-AD4835140C77}.Release|ARM.ActiveCfg = Release|ARM
+		{691176FF-C1D2-4C14-9E09-AD4835140C77}.Release|ARM.Build.0 = Release|ARM
+		{691176FF-C1D2-4C14-9E09-AD4835140C77}.Release|Win32.ActiveCfg = Release|Win32
+		{691176FF-C1D2-4C14-9E09-AD4835140C77}.Release|Win32.Build.0 = Release|Win32
+		{691176FF-C1D2-4C14-9E09-AD4835140C77}.Release|x64.ActiveCfg = Release|x64
+		{691176FF-C1D2-4C14-9E09-AD4835140C77}.Release|x64.Build.0 = Release|x64
+		{691176FF-C1D2-4C14-9E09-AD4835140C77}.Release|x86.ActiveCfg = Release|Win32
+		{691176FF-C1D2-4C14-9E09-AD4835140C77}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{691176FF-C1D2-4C14-9E09-AD4835140C77} = {B1F8700C-CA8B-4AE2-AAA1-43DE331F024F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {12F07D57-26F8-467B-8820-353382FE632F}
