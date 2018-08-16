@@ -10,7 +10,7 @@ using namespace std;
 #define WarningLogName "warning_log.txt"
 #define MessageLogName "message_log.txt"
 
-#define LoggingPath
+#define LoggingPath ".\\logs\\"
 
 //using std;
 FILE* ErrorLogFile;
@@ -55,9 +55,9 @@ typedef struct _LoggingObjectStruct
 	int nofLogs;
 	int prefixWithTime;
 	int useLocalTime;
-#if defined PLATFORM_Win32 && defined SUPPORT_EVENT_LOG
-	gcroot<System::Diagnostics::EventLog^> systemLog;
-#endif
+//#if defined PLATFORM_Win32 && defined SUPPORT_EVENT_LOG
+//	gcroot<System::Diagnostics::EventLog^> systemLog;
+//#endif
 } LoggingObjectStruct;
 
 

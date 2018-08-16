@@ -4,7 +4,10 @@
 
 
 
-
+static void WriteLine(logdata* dataLog, char * input) 
+{
+	fprintf(MessageLogFile, "%s \n", input);
+}
 
 
 
@@ -69,8 +72,8 @@ void InitLogs()
 };
 
 
-void LogMessage(FILE *MessageLogFile,char * input) {
-	FILE* aux = fopen(MessageLogName, "w+");
+void LogMessage(LoggingObjectStruct *log,char * input) {
+	FILE* aux = fopen(log->logs[0].filename, "w+");
 	if (aux == NULL) {
 		// do nothing
 	}
@@ -80,7 +83,8 @@ void LogMessage(FILE *MessageLogFile,char * input) {
 		MessageLogFile = aux;
 	}
 	QThread_Mutex_P(log->mutex);
-	fprintf(MessageLogFile, "%s \n", input);
+	WriteLine(log->logs, strcat("REPORT LOG ENTRY:",input));
+	//fprintf(MessageLogFile, "%s \n", input);
 #ifdef DEBUG_GE
 	//print to console
 	printf(MessageLog, "GE_ENGINE_MESSAGE: %s \n", input);
@@ -91,25 +95,25 @@ void LogMessage(FILE *MessageLogFile,char * input) {
 
 
 
-void LogWarning(FILE * WarningLog, char * input) {
+void LogWarning(LoggingObjectStruct *log, char * input) {
 	FILE* aux = fopen(WarningLogName, "w+");
 	if (aux == NULL) {
 		// do nothing
 	}
 	else
 	{
+
 		// assing the reference created to
-		WarningLog = aux;
+		WarningLogFile = aux;
 	}
-	fprintf(WarningLog, "%s \n", input);
-#ifdef DEBUG_GE
-	//print to console
-	printf(MessageLog, "GE_ENGINE_WARNING: %s \n", input);
-#endif
+	QThread_Mutex_P(log->mutex);
+	WriteLine(log->logs, strcat("WARNING LOG ENTRY:", input));
+	QThread_Mutex_V(log->mutex);
+
 };
 
 
-void LogError(char * input) {
+void LogError(LoggingObjectStruct *log, char * input) {
 	FILE* aux = fopen(WarningLogName, "w+");
 	if (aux == NULL) {
 		// do nothing
@@ -117,13 +121,12 @@ void LogError(char * input) {
 	else
 	{
 		// assing the reference created to 
-		ErrorLog = aux;
+		ErrorLogFile = aux;
 	}
-	fprintf(ErrorLog, "%s \n", input);
-#ifdef DEBUG_GE
-	//print to console
-	printf(MessageLog, "GE_ENGINE_ERROR: %s \n", input);
-#endif
+	QThread_Mutex_P(log->mutex);
+	WriteLine(log->logs, strcat("ERROR LOG ENTRY:", input));
+	QThread_Mutex_V(log->mutex);
+
 };
 
 
@@ -134,8 +137,8 @@ void CloseFile(FILE* log) {
 };
 
 void CloseLogFiles() {
-	CloseFile(ErrorLog);
-	CloseFile(MessageLog);
-	CloseFile(WarningLog);
+	CloseFile(ErrorLogFile);
+	CloseFile(MessageLogFile);
+	CloseFile(WarningLogFile);
 };
 
